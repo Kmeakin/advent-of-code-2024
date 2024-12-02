@@ -1,0 +1,18 @@
+[package]
+edition = "2024"
+name    = "advent-of-code-2024"
+version = "0.1.0"
+
+[[bin]]
+name = "day1"
+path = "src/day1.rs"
+
+[workspace.lints]
+rust.unused_qualifications = { level = "warn", priority = 100 }
+rustdoc.all                = { level = "warn", priority = 100 }
+
+clippy.all      = { level = "warn", priority = 0 }
+clippy.nursery  = { level = "warn", priority = 0 }
+clippy.pedantic = { level = "warn", priority = 0 }
+
+[dependencies]
